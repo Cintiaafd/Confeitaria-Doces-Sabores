@@ -9,13 +9,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" origem cruzada>
-    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap"
-        rel=" stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap" rel=" stylesheet ">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
 
 </head>
@@ -52,8 +52,28 @@
 
     <!-- Inicio da parte de contatos da loja-->
     <section class="sobre">
-        <div class="caixa1">
-            <img id="cupcake" src="img/cup.jpeg" alt="foto de um cupcake">
+        <div>
+            <section class="modal-container" data-modal="container">
+                <div class="modal">
+                    <ul class="contato-conf">
+                        <li class="nome-conf">Doces Sabores</li>
+                        <li>CNPJ: 76.991.426/0001-16</li>
+                        <li>Telefone: +55(16) 3589-6587 </li>
+                        <li>E-mail: docessabores@gmail.com</li>
+                        <li class="msg-conf">Quer deixar sua mensagem?</li>
+                    </ul>
+
+                    <form action="">
+                        <label for="nome">Nome</label>
+                        <input type="text" form="nome" id="nome">
+                        <label for="email">E-mail</label>
+                        <input type="text" form="email" id="email">
+                        <label for="msg">Digite sua mensagem:</label>
+                        <input type="text" form="msg" id="msg">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
         </div>
 
 
@@ -68,9 +88,7 @@
             <p>Venha nos visitar</p>
             <iframe class="localizacao2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6691840381127!2d-47.83489957560364!3d-21.165559640903425!
         2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be6f086c65a7%3A0x856c948d24efc7bd!2sR.%20Monte%20Alegre%2C%20180%20-%20Sumarezinho
-        %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
     </section>
