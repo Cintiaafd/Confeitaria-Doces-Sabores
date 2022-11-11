@@ -1,0 +1,48 @@
+/*Dispositivos móveis = smartphone*/
+@media only screen and (max-width: 787px) { 
+    .cabecalho img{
+        margin-left:95px;
+    }
+}
+    .cabecalho{
+        position: relative;
+        height: 390px;
+    }
+    .menuTopo{
+        text-align: center;
+    }
+    .menuTopo ul li a{
+        display:block;
+      
+        float: left;
+        padding: 3px;
+        line-height: 15px;
+        border: solid 3px skyblue;
+        background-color: white;
+        width: 220px;
+
+        font-family: cursive;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+     }
+
+     .menuTopo ul li {
+        display:inline-block;
+        margin-left: 3px;
+        margin-top: 40px;
+        padding: 10px;
+        transition: background-color 0, 5s;
+    }
+    
+
+    /*Banner*/
+    .principal h1{
+        font-size: 55px;
+        margin-top: -1px;
+        margin-top: 40px;;
+    }    
+
+    .principal a{
+        font-size: 12px;
+    }
