@@ -1,30 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
 }
 
 body {
     background: moccasin;
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 300px;
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+     
+
 }
 
 .um {
     width: 100%;
-    height: 16px;
+    height: 1rem;
     background: #f4a460;
 }
 
-.cabecalho {
+.cabecalhoPrincipal {
     width: 100%;
     background: #ffdead;
     padding: 25px;
 }
 
-#titulo h1 {
+.cabecalhoPrincipal-nav {
+    width: auto;
+}
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.cabecalhoPrincipal-nav-link {
+    font-family: cursive;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #696969;
+    transition: .5s;
+    display: block; 
+    width: auto;
+    margin: 0 0 0 10px;
+}
+.cabecalhoPrincipal-nav-link:hover {
+    background-color: #f4a460;
+    color: rgb(0, 0, 0);
+    transition: all 0, 5s;
+    box-shadow: #f4a460 2px 2px 10px;
+    text-decoration: underline;
+}
+
+
+.titulo h1 {
     font-family: 'dose';
     font-size: 30pt;
     color: #363636;
@@ -41,42 +88,6 @@ body {
     margin-top: 0px;
 }
 
-.menuTopo {
-    text-align: center;
-
-}
-
-.menuTopo ul li a {
-    font-family: cursive;
-    font-size: 18px;
-    font-weight: bold;
-    color: #696969;
-    line-height: 15px;
-    border: solid 3px skyblue;
-    background-color: white;
-    padding: 3px;
-}
-
-.menuTopo ul li {
-    display: inline-block;
-    margin-left: 3px;
-    margin-top: 40px;
-    padding: 10px;
-    transition: background-color 0, 5s;
-}
-
-.menuTopo ul li:hover {
-    background-color: #f4a460;
-}
-
-.menuTopo a {
-    text-decoration: none;
-}
-
-.menuTopo a:hover {
-    text-decoration: underline;
-    color: skyblue;
-}
 
 #logo {
     width: 100px;
@@ -86,9 +97,11 @@ body {
 /*Parte principal do site*/
 
 .principal {
+    display: flex;
     width: 100%;
+    margin: 0 auto;
     height: 400px;
-    background: url(../img/banner3.jpeg) no-repeat center;
+    background: url(../img/banner2.png) no-repeat center;
     background-size: cover;
     text-align: center;
 }
@@ -99,7 +112,7 @@ body {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    margin-top: 110px;
+    margin-top: 20px;
     text-shadow: black 2px 2px 10px;
     margin-bottom: 50px;
 }
@@ -111,29 +124,42 @@ body {
     width: 50px;
     background: white;
     border-radius: 10px;
-    box-shadow: black 2px 2px 10px;
-    color: black;
+    box-shadow: rgb(48, 30, 17) 2px 2px 10px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: .5s;
 }
 
 .principal a:hover {
-    background-color: white;
-    color: royalblue;
+    background-color: #f4a460;
+    color: rgb(0, 0, 0);
     transition: all 0, 5s;
-    box-shadow: skyblue 2px 2px 10px;
+    box-shadow: #f4a460 2px 2px 10px;
     text-decoration: underline;
 }
 
 /*Promoões de bolos */
+.doces{
+    width: 80%;
+    margin: 0 auto;
+}
 
+/*#back{
+    background-color: white;
+    border-radius: 8px;
+    
+}
+*/
 .doces h2 {
+    border: 1px;
     margin-top: 75px;
     font-family: 'dose';
     font-size: 45px;
     text-align: center;
     color: #696969;
     text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
 }
 
 .doces p {
@@ -143,13 +169,15 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin-top: 15px;
+    
 }
 
-.tipo {
-    margin-top: 75px;
+.menuDoces{
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.tipo li {
+.menuDoces li {
     font-family: 'dose';
     text-transform: uppercase;
     text-align: center;
@@ -159,26 +187,29 @@ body {
     margin-bottom: 10px;
 }
 
-.tipo img {
+.menuDoces img {
     width: 300px;
     height: 250px;
     -webkit-transition: .5s ease;
     transition: 5s ease;
+    border-radius: 0 0 12px 12px;
 }
 
-.tipo img:hover {
+.menuDoces img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.tipo h3 {
+.menuDoces h3 {
+    border-radius: 12px 12px 0 0;
     background: skyblue;
+    width: 300px;
     color: white;
     font-weight: bold;
     font-family: cursive;
 }
 
-.tipo p {
+.menuDoces p {
     font-family: 'dose';
     font-size: 17px;
     line-height: 30px;
@@ -186,9 +217,10 @@ body {
     color: black;
     text-transform: initial;
     text-align: center;
+    
 }
 
-.tipo h4 a {
+.menuDoces h4 a {
 
     background-color: skyblue;
     padding: 10px;
@@ -197,18 +229,22 @@ body {
     font-family: cursive;
     text-decoration: none;
     line-height: 65px;
+    border-radius: 4px;
+    transition: .5s;
+    
 }
 
-.tipo h4 a:hover {
-    background-color: white;
+.menuDoces h4 a:hover {
+    background-color: #f4a460;
     color: dimgray;
     transition: 0.8 all;
+    
 }
 
 /*Slides das bebidas*/
 .slide {
     margin-top: 20px;
-    flex: none;
+    
 }
 
 .slide h3 {
@@ -234,6 +270,7 @@ body {
 .itens {
     display: flex;
     overflow-x: auto;
+    
 }
 
 .itens img {
@@ -241,6 +278,8 @@ body {
     height: 135px;
     margin-left: 30px;
 }
+
+
 
 /*Localização*/
 .localizacao2 {
@@ -319,47 +358,118 @@ body {
 
 /*CSS para página sobre a histario da loja*/
 .sobre {
-    display: grid;
-    background: white;
     width: 80%;
-    height: 700px;
-    margin: 60px;
+    display: flex;
+    background: white;
+    margin: 0 auto;  
+    height: 550px;
+    justify-content: space-between;
+    
+}
+.sobreNav{
+    width: auto;
 }
 
-.caixa {
-    display: inline-block;
-    background: lightpink;
-    width: 40%;
-    height: 600px;
-    margin: 60px;
+.sobreNav h1 {
+    border: 1px;
+    margin-top: 20px;
+    margin-left: 70px;
+    font-family: 'dose';
+    font-size: 45px;
+    text-align: center;
+    color: #696969;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
 }
+.sobreNav p {
+        font-family: cursive;
+        font-size: 12px;
+        color: #8b4513;
+        text-transform: uppercase;
+        text-align:justify;
+        margin-top: 15px;
+        padding: 14px;
+        
+        
+    }
 
-#cup {
-    width: 750px;
-    height: 500px;
+.sobreMissao h2{
+    margin-left: 12px;
+    font-family: 'dose';
+    font-size: 14px;
+    text-align: justify;
+    color: #696969;
+    text-transform: uppercase;
 }
 
 /*CSS da página de contatos*/
 
-.sobre {
-    display: grid;
-    background: white;
-    width: 80%;
-    height: 700px;
-    margin: 60px;
+.formStyle{
+    font-family: cursive;
+        font-size: 12px;
+        color: #8b4513;
+        text-transform: uppercase;
+        text-align:justify;
+        margin-top: 15px;
+        padding: 14px;
+       
+}
+.Ibox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-color: #8b4513;
+    border-radius: 5px;
+    background-color: rgb(187, 184, 185);
+}
+.ultimaBox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 32px;
+    border-color: #8b4513;
+    border-radius: 5px;
+    background-color: rgb(187, 184, 185);
 }
 
-.caixa1 {
-    display: inline-block;
-    background: lightblue;
-    width: 40%;
-    height: 600px;
-    margin: 60px;
+.formulario{
+    
+    font-family: 'dose';
+    font-size: 30px;
+    text-align: justify;
+    color: #8b4513;
+    text-transform: uppercase;
+}
+.contatos h1{
+    padding: 30px;
+    font-family: cursive;
+    font-size: 30px;
+    color: #8b4513;
+    text-transform: uppercase;
+    text-align:justify;
+    margin-top: 15px;
+    padding: 14px;
+}
+.contatos p{
+    font-family: cursive;
+    font-size: 24px;
+    color: #8b4513;
+    text-transform: uppercase;
+    text-align:justify;
+    margin-top: 15px;
+    padding: 14px;
 }
 
-#cupcake {
+.button{
+        border: none;
+        color: pink;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 12px 12px;
+        cursor: pointer;
+      }
+    
 
-    width: 900px;
-    height: 500px;
 
-}

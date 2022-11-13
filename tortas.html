@@ -15,39 +15,42 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
 
 </head>
 
 
 <body>
-    <!--Topo do menu do site-->
-    <div class="um"> </div>
-    <header class="cabecalho">
-        <div class="container">
-            <a href="doces_sabores_home.html" class="grid-4">
-                <img id="logo" src="img\logo.png" alt="Logo da confeitaria Doces Sabores">
-            </a>
+ <!--Topo do menu do site-->
+ <div class="um"> </div>
+ <!-- classe pai -->
+ <header class="cabecalhoPrincipal">
 
-            <hgroup id="titulo">
-                <h1>Doces Sabores</h1>
-                <h2>Confeitaria feita com amor!</h2>
-            </hgroup>
 
-            <nav class="grid-12 menuTopo">
-                <ul type="disc">
-                    <li><a href="doces_sabores_home.html">Home</a></li>
-                    <li><a href="bolos.html">Bolos</a></li>
-                    <li><a href="tortas.html">Tortas</a></li>
-                    <li><a href="doces.html">Doces</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!--Final do menu do site-->
+     <div class="container">
+
+         <hgroup class="titulo">
+             <img src="./img/logo.png" id="logo" />
+             <h1>
+
+                 Doces Sabores</h1>
+             <h2>Confeitaria feita com amor!</h2>
+         </hgroup>
+
+         <nav class="cabecalhoPrincipal-nav">
+
+             <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
+             <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
+             <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
+             <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
+             <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
+             <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
+
+         </nav>
+     </div>
+ </header>
+ <!--Final do menu do site-->
 
     <section class="principal">
         <div class="container">
@@ -63,28 +66,28 @@
             <h2>Tortas feitas à mão e com muito amor.</h2>
             <p>Ingredientes originais e selecionados</p>
 
-            <ul class="tipo">
-                <li class="grid-1-3">
+            <ul class="menuDoces">
+                <li class="blocoDoce">
                     <h3>Torta holandesa</h3>
                     <img src="img/torta_holandesa.png" alt="torta holandesa">
-                    <p>Massa de biscoito maizena, recheado com creme de baunilha e colerto com ganache de
-                        chocolate.&nbsp;Vendido inteiro ou
+                    <p>Massa de biscoito maizena, <br> recheado com creme de baunilha <br> e colerto com ganache de
+                        chocolate.&nbsp; <br>Vendido inteiro ou
                         fatia.</p>
                     <h4><a href="#">R100,00&nbsp;ou R$10,00 fatia </a></h4>
                     <h4><a href="#">Fazer o Pedido</a></h4>
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Torta cheesecake</h3>
                     <img src="img/torta_cheesecake.jpeg" alt="Torta cheesecake">
-                    <p>Massa de biscoito maizena, recheio de creamcheese e cobertura de goiabada.&nbsp;Recheio de
-                        nozes.Vendido inteiro ou fatia.</p>
+                    <p>Massa de biscoito maizena,<br> recheio de creamcheese e <br>cobertura de goiabada.&nbsp; <br>Recheio de
+                        nozes. <br> Vendido inteiro ou fatia. </p>
                     <h4><a href="#">R$100,00&nbsp;ou R$10,00 fatia </a></h4>
                     <h4><a href="#">Fazer o Pedido</a></h4>
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Torta de chocolate</h3>
                     <img src="img/torta_chocolate.jpg" alt="Torta de chocolate">
-                    <p>Torta chocolatuto!&nbsp;Camadas de biscoito intercaladas com mousse de chocolate.</p>
+                    <p>Torta chocolatuto!&nbsp; <br> Camadas de biscoito intercaladas <br> com mousse de chocolate.</p>
                     <h4><a href="#">R$100,00&nbsp;ou R$10,00 fatia</a></h4>
                     <h4><a href="#">Fazer o Pedido</a></h4>
                 </li>
@@ -96,25 +99,25 @@
         <div class="container">
 
 
-            <ul class="tipo">
-                <li class="grid-1-3">
+            <ul class="menuDoces">
+                <li class="blocoDoce">
                     <h3>Torta de abacaxi</h3>
                     <img src="img/torta_abacaxi.jpeg" alt="Torta de abacaxi">
-                    <p>Massa de biscoito amateigado e recheio de creme de abacaxi.</p>
+                    <p>Massa de biscoito amateigado<br> e recheio de creme de abacaxi.</p>
                     <h4><a href="#">R$90,50,00&nbsp;ou R$8,50 fatia</a></h4>
                     <h4><a href="#">Fazer o Pedido</a></h4>
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Torta de brigadeiro</h3>
                     <img src="img/torta_brigadeiro.jpg" alt="Torta de brigadeiro">
-                    <p>Deliciosa massa de biscoito de chocolate. &nbsp;Recheada com brigadeiro maio amargo.</p>
+                    <p>Deliciosa massa de biscoito de chocolate.<br> &nbsp;Recheada com brigadeiro maio amargo.</p>
                     <h4><a href="#">R$60,00&nbsp;ou R$8,90 fatia</a></h4>
                     <h4><a href="#">Fazer o Pedido</a></h4>
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Torta de morango</h3>
                     <img src="img/torta_geleia_morango.jpg" alt="Torta de morango">
-                    <p>Massa amanteigada, recheio de creme e cobertura de geléia de morango.</p>
+                    <p>Massa amanteigada, <br> recheio de creme e <br>cobertura de geléia de morango.</p>
                     <h4><a href="#">R$75,00&nbsp;ou R$10,90 fatia</a></h4>
                     <h4><a href="#">Fazer o Pedido</a></h4>
                 </li>
@@ -127,25 +130,25 @@
         <div class="container">
 
 
-            <ul class="tipo">
+            <ul class="menuDoces">
                 <li class="grid-1-3">
                     <h3>Torta Romeu e Julieta</h3>
                     <img src="img/torta_romeu_julieta.png" alt="Torta Romeu e Julieta">
-                    <p>Torta recheada com brigadeiro de creamcheese e coberto com geléia de goiaba.</p>
+                    <p>Torta recheada com brigadeiro <br> de creamcheese e coberto com geléia de <br> goiaba.</p>
                     <h4><a href="">R$98,00&nbsp;ou R$9,90 fatia</a></h4>
                     <h4><a href=#>Fazer o Pedido</a></h4>
                 </li>
                 <li class="grid-1-3">
                     <h3>Torta trufada</h3>
                     <img src="img/torta_trufada.png" alt="torta trufada">
-                    <p>Torta rechada com trufa de chocolate. &nbsp;Uma delícia!!!</p>
+                    <p>Torta rechada com trufa de chocolate. <br> &nbsp;Uma delícia!!!</p>
                     <h4><a href="#">R$45,00&nbsp;ou R$5,00 fatia</a></h4>
                     <h4><a href=#>Fazer o Pedido</a></h4>
                 </li>
                 <li class="grid-1-3">
                     <h3>Torta banofee</h3>
                     <img src="img/torta_banofee.jpeg" alt="Bolo de chocolate simples">
-                    <p>Torta banofee, recheada com doce de leite e coberta com banana!!!</p>
+                    <p>Torta banofee, <br>recheada com doce de leite <br> e coberta com banana!!!</p>
                     <h4><a href="#">R$85,00&nbsp;ou R$8,00 fatia</a></h4>
                     <h4><a href=#>Fazer o Pedido</a></h4>
                 </li>

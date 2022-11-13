@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
 
 </head>
@@ -24,26 +24,29 @@
 <body>
     <!--Topo do menu do site-->
     <div class="um"> </div>
-    <header class="cabecalho">
-        <div class="container">
-            <a href="doces_sabores_home.html" class="grid-4">
-                <img id="logo" src="img\logo.png" alt="Logo da confeitaria Doces Sabores">
-            </a>
+    <!-- classe pai -->
+    <header class="cabecalhoPrincipal">
 
-            <hgroup id="titulo">
-                <h1>Doces Sabores</h1>
+
+        <div class="container">
+
+            <hgroup class="titulo">
+                <img src="./img/logo.png" id="logo" />
+                <h1>
+
+                    Doces Sabores</h1>
                 <h2>Confeitaria feita com amor!</h2>
             </hgroup>
 
-            <nav class="grid-12 menuTopo">
-                <ul type="disc">
-                    <li><a href="doces_sabores_home.html">Home</a></li>
-                    <li><a href="bolos.html">Bolos</a></li>
-                    <li><a href="tortas.html">Tortas</a></li>
-                    <li><a href="doces.html">Doces</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+            <nav class="cabecalhoPrincipal-nav">
+
+                <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
+                <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
+                <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
+                <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
+                <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
+                <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
+
             </nav>
         </div>
     </header>
@@ -59,38 +62,38 @@
     <!--Fim da parte principal do site-->
 
     <!--Início da parte dos Bolos-->
+
     <section class="doces">
         <div class="container">
             <h2>Os melhores doces da cidade</h2>
             <p>Confira nossas promoções de bolos</p>
 
-            <ul class="tipo">
-                <li class="grid-1-3">
+            <ul class="menuDoces">
+                <li class="blocoDoce">
                     <h3>Promo 1</h3>
                     <img src="img/bolo_cenoura.jpg" alt="Bolo de cenoura">
                     <p>Já sabe que hoje é dia, né!?</p>
-                    <p>Tem promo rolando dessas coisas lindas e deliciosas!<b>Clique no link e não passe vontade!</b>
+                    <p>Tem promo rolando dessas coisas lindas e <br>deliciosas!
                     </p>
-                    <h4><a href="#">R$30,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <h4><a href="#">R$30,00 | Fazer o Pedido</a></h4>
+
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Promo 2</h3>
                     <img src="img/bolo_de-chocolate_recheado.jpg" alt="Bolo de chololate recheado">
                     <p>Já viu a promo que está rolando?</p>
-                    <p>Compre um bolo fofinho e delicioso.&nbsp; Seu café da tarde ficará mais gostoso.<b>Clique no link
-                            e garanta o seu!</b></p>
-                    <h4><a href="#">R$38,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Compre um bolo fofinho e delicioso.&nbsp; <br>Seu café da tarde ficará mais gostoso.</p>
+                    <h4><a href="#">R$38,00 | Fazer o Pedido </a></h4>
+
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Promo 3</h3>
                     <img src="img/bolo_ninho.jpeg" alt="Bolo de leite ninho">
                     <p>E como resistir, né!?</p>
-                    <p>Hoje pode!<b>Ontem, hoje e sempre!</b><b>Clique no link e peça o seu!</b></p>
-                    <h4><a href="#">R$45,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
-                </li>
+                    <p>Hoje pode! <b>Ontem, hoje e sempre!</b></p>
+                    <h4><a href="#">R$45,00 | Fazer o Pedido</a></h4>
+
+
 
             </ul>
         </div>
@@ -101,34 +104,34 @@
     <!--Início da parte de Tortas-->
 
     <section class="doces">
-        <div class="container">
+        <div class="container" id="back">
             <h2>Alerta de promoção de tortas! Aproveite!</h2>
             <p>Aquele zoomm nestas maravilhosas tortas</p>
 
-            <ul class="tipo">
-                <li class="grid-1-3">
+            <ul class="menuDoces">
+                <li class="blocoDoce">
                     <h3>Promo 1</h3>
                     <img src="img/torta_abacaxi.jpeg" alt="Torta de abacaxi">
                     <p>Torta de abacaxi de milhões!</p>
-                    <p>Já deu para ver que é uma delícia, né!?<br>Clique no link e aproveite!</p>
-                    <h4><a href="#">R$33,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Já deu para ver que é uma delícia, né!?</p>
+                    <h4><a href="#">R$33,00 | Fazer o Pedido </a></h4>
+
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Promo 2</h3>
                     <img src="img/torta_brigadeiro.jpg" alt="Torta de brigadeiro">
                     <p>Já conhece nossos doces?</p>
-                    <p>Esta é nossa maravilhosa torta de brigadeiro.<br>Clique e garanta a sua torta!</p>
-                    <h4><a href="#">R$33,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Esta é nossa maravilhosa torta de <br>brigadeiro.</p>
+                    <h4><a href="#">R$33,00 | Fazer o Pedido</a></h4>
+
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Promo 3</h3>
                     <img src="img/torta_cheesecake.jpeg" alt="Torta cheesecake">
                     <p>Ahhhhhh, cheesecake!</p>
-                    <p>Porque hoje pede um docinho, né?!<br>Clique no link e peça o seu!</b></p>
-                    <h4><a href="#">R$28,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Porque hoje pede um docinho, né?!</p>
+                    <h4><a href="#">R$28,00 | Fazer o Pedido</a></h4>
+
                 </li>
 
             </ul>
@@ -138,34 +141,35 @@
 
     <!--Início da parte de cupcakes e demais doces-->
     <section class="doces">
-        <div class="container">
+        <div class="container" id="back">
             <h2>Alerta de promoção para os amantes de cupcakes e donuts!&nbsp; Aproveite!</h2>
             <p>Garanta o seu docinho!</p>
 
-            <ul class="tipo">
-                <li class="grid-1-3">
+            <ul class="menuDoces">
+                <li class="blocoDoce">
                     <h3>Promo 1</h3>
                     <img src="img/c10.png" alt="Cupcake sabor baunhilha">
                     <p>Imposssível pedir um só!</p>
-                    <p>Fofinho e bem recheado!<br>Peça o seu!</p>
-                    <h4><a href="#">R$14,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Fofinho e bem recheado!</p>
+                    <h4><a href="#">R$14,00 | Fazer o Pedido </a></h4>
+
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Promo 2</h3>
                     <img src="img/cupcake_chocolate.jpg" alt="Cupcake sabor chocolate">
-                    <p>Zero condições, porque aqui tem recheio de verdade!</p>
-                    <p>Este é nosso incrível cupcake de chocolate!<br>Peça o seu já!</p>
-                    <h4><a href="#">R$15,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Zero condições, porque aqui tem <br>recheio de verdade!</p>
+                    <p>Este é nosso incrível cupcake de <br> chocolate!</p>
+                    <h4><a href="#">R$15,00 | Fazer o Pedido </a></h4>
+
                 </li>
-                <li class="grid-1-3">
+                <li class="blocoDoce">
                     <h3>Promo 3</h3>
                     <img src="img/o1.png" alt="donut cobertura sabor chocolate">
                     <p>Ouvi falar donut?!</p>
-                    <p>Aqui está nosso incrível donut.&nbsp; Saboroso e fofinho!<br>Clique no link e peça o seu!</b></p>
-                    <h4><a href="#">R$10,00</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Aqui está nosso incrível donut.&nbsp;<br>
+                        Saboroso e fofinho!</p>
+                    <h4><a href="#">R$10,00 | Fazer o Pedido </a></h4>
+
                 </li>
 
             </ul>
@@ -178,7 +182,7 @@
         <div class="container">
             <h3>Acompanhamentos</h3>
             <p>Que tal uma bebida para acompanhar?</p>
-            <div class="itens">
+            <div class="itens" id="test">
                 <img src="img/agua.png" alt="água garrafa 500 ml">
                 <img src="img/coca.png" alt="coca-cola lata">
                 <img src="img/coca_zero.jpg" alt="coca-cola zero lata">
@@ -197,44 +201,49 @@
     </section>
     <!--Fim do slide-->
 
-    <!--Localização-->
-    <section class="localizacao">
-        <div class="container">
-            <h2>Nossa Localização</h2>
-            <p>Venha nos visitar</p>
-            <iframe class="localizacao2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6691840381127!2d-47.83489957560364!3d-21.165559640903425!
-        2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be6f086c65a7%3A0x856c948d24efc7bd!2sR.%20Monte%20Alegre%2C%20180%20-%20Sumarezinho
-        %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div clas="container">
 
-        </div>
-    </section>
+        <!--Localização-->
+        <section class="localizacao">
+            <div class="container">
+                <h2>Nossa Localização</h2>
+                <p>Venha nos visitar</p>
+                <iframe class="localizacao2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6691840381127!2d-47.83489957560364!3d-21.165559640903425!
+            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be6f086c65a7%3A0x856c948d24efc7bd!2sR.%20Monte%20Alegre%2C%20180%20-%20Sumarezinho
+            %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <!--Fim Localização-->
+            </div>
+        </section>
 
-    <!--Pedidos para delivery-->
-    <section class="delivery">
-        <div class="container">
-            <h2>Peça online</h2>
-            <p>Acesse nossas redes sociais</p>
-            <!-- target serve para abrir uma aba nova ao clicar no link-->
-            <a href="#" target="_blank"><img class="pedido" src="img/icon_whatsapp.png"
-                    alt="Ícone para fazer pedido"></a>
-            <a href="#" target="blank"><img class="pedido" src="img/icon_facebook.png" alt="ícone facebook"></a>|
-            <a href="#" target="blank"><img class="pedido" src="img/icon_instragram.png" alt="Ícone instagram"></a>
+        <!--Fim Localização-->
 
-        </div>
-    </section>
-    <!--Fim de Pedidos por delivery-->
+        <!--Pedidos para delivery-->
+        <section class="delivery">
+            <div class="container">
+                <h2>Peça online</h2>
+                <p>Acesse nossas redes sociais</p>
+                <!-- target serve para abrir uma aba nova ao clicar no link-->
+                <a href="https://web.whatsapp.com" target="_blank"><img class="pedido" src="img/icon_whatsapp.png"
+                        alt="Ícone para fazer pedido"></a>
+                <a href="https://www.facebook.com" target="blank"><img class="pedido" src="img/icon_facebook.png"
+                        alt="ícone facebook"></a>|
+                <a href="https://www.instagram.com" target="blank"><img class="pedido" src="img/icon_instragram.png"
+                        alt="Ícone instagram"></a>
 
-    <!--rodapé-->
-    <footer id="rodape">
-        <p>Copyright 2022 - Grupo 08 - Projeto Integrador do Curso Desenvolvimento de Sistemas Orientado a Dispositivos
-            Móveis e Baseados na Web</p>
+            </div>
+        </section>
+        <!--Fim de Pedidos por delivery-->
 
-    </footer>
-    <!--fim do rodapé-->
+        <!--rodapé-->
+        <footer id="rodape">
+            <p>Copyright 2022 - Grupo 08 - Projeto Integrador do Curso Desenvolvimento de Sistemas Orientado a
+                Dispositivos
+                Móveis e Baseados na Web</p>
+
+        </footer>
+        <!--fim do rodapé-->
 </body>
 
 </html>
