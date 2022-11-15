@@ -1,5 +1,6 @@
 <h1> Confeitaria-Doces-Sabores</h1>
-<h2>Aplicação Web desenvolvido pelo grupo 8  do curso de Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web.</h2>
+<h2>Aplicação Web desenvolvida pelo grupo 8.</h2>
+<h3>Curso: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web.</h3>
 <h3 align="center"> 
 	Membros do grupo🚀
  </h3>
