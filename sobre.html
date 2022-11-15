@@ -9,84 +9,151 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" origem cruzada>
-    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap"
-        rel=" stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap" rel=" stylesheet ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/menuMobile.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
-
+    <script>
+        document.documentElement.className += ' js'
+    </script>
 </head>
 
 
 <body>
     <!--Topo do menu do site-->
     <div class="um"> </div>
- <!-- classe pai -->
- <header class="cabecalhoPrincipal">
+    <!-- classe pai -->
+    <header class="cabecalhoPrincipal">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+
+        <div class="container">
+
+            <hgroup class="titulo">
+                <img src="./img/logo.png" id="logo" />
+                <h1>
+
+                    Doces Sabores</h1>
+                <h2>Confeitaria feita com amor!</h2>
+            </hgroup>
+
+            <nav class="cabecalhoPrincipal-nav" data-menu="list">
+
+                <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
+                <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
+                <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
+                <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
+                <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
+                <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
 
 
-    <div class="container">
+            </nav>
+        </div>
+    </header>
+    <!--Final do menu do site-->
 
-        <hgroup class="titulo">
-            <img src="./img/logo.png" id="logo" />
-            <h1>
-
-                Doces Sabores</h1>
-            <h2>Confeitaria feita com amor!</h2>
-        </hgroup>
-
-        <nav class="cabecalhoPrincipal-nav">
-
-            <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
-            <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
-            <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
-            <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
-            <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
-            <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
-
-        </nav>
-    </div>
-</header>
-<!--Final do menu do site-->
 
 
     <!-- Inicio da parte que fala sobre a história da loja-->
     <section class="sobre">
+
         <div class="container">
             <nav class="sobreNav">
-                <div>
+                <h1 class="titulo">Um pouco sobre a Confeitaria...</h1>
+                <section class="sobre-conf">
+
+                    <ul class="conf-lista" data-tab="menu">
+                        <li>
+                            <img src="img/conf_1.jpg">
+                        </li>
+                        <li>
+                            <img src="img/conf_2.jpg">
+                        </li>
+                        <li>
+                            <img src="img/conf_3.jpg">
+                        </li>
+                        <li>
+                            <img src="img/conf_4.jpg">
+                        </li>
+                        <li>
+                            <img src="img/conf_5.png">
+                        </li>
+                    </ul>
+
+                    <div class="conf-descricao" data-tab="content">
+                        <section data-anime="show-right" class="ativo">
+                            <h2>Desde 2015</h2>
+                            <p>A Confeitaria Doces Sabores surgiu a partir de uma conversa entre amigos(as) onde via-se a necessidade de ter um docinho para saborear em alguns momentos mas não haviam opções disponíveis.</p>
+                            <p>Uma pequena cozinha na cidade de Ribeirão Preto, foi onde se iniciou a jornada da Doces Sabores. Logo no começo, todos os doces produzidos eram vendidos quase que imediatamente. Começando pela divulgação entre amigos e crescendo cada vez mais...</p>
+                            <p>OBS: Clique em cada imagem para saber +</p>
+                        </section>
+                        <section data-anime="show-down">
+                            <h2>Nossa História</h2>
+                            <p>Por alguma razão, independente de quanto fosse produzido, nosso estoque era finalizado muito antes do esperado.</p>
+                            <p>Em pouco tempo de funcionamento, foi necessário alugar um novo espaço e contratar mais pessoas para nossa produção, assim, além de produzir mais poderíamos receber nossos clientes.</p>
+                            <p>Assim, nosso primeiro espaço foi inaugurado! E nosso sonho estava se concretizando.</p>
+                            <p>OBS: Clique em cada imagem para saber +</p>
+                        </section>
+                        <section data-anime="show-right">
+                            <h2>Produtos diferenciados</h2>
+                            <p>Iniciamos nosso cardápio com doces, entre eles: Brigadeiro, beijinho, casadinho e camafeu.</p>
+                            <p>Aos poucos fomos acrescentando outras opções que foram sucesso com nossa clientela!! Bolos, tortas, cupcakes, muffins e donuts. Era difícil escolher a melhor opção!</p>
+                            <p>Passamos a produzir não só para nossa loja mas também para encomendas e eventos de pequeno e grande porte.</p>
+                            <p>OBS: Clique em cada imagem para saber +</p>
+                        </section>
+                        <section data-anime="show-down">
+                            <h2>Qualidade dos Ingredientes</h2>
+                            <p>Nosso diferencial sempre foi a qualidade dos nossos ingredientes! Prezamos pela satisfação como um todo.</p>
+                            <p>Nosso objetivo não é entregar apenas um doce, mas sim, uma experiência! Um momento único onde ao saborear nossos produtos, possamos despertar sensações e criar momentos únicos.</p>
+                            <p>Que nossos produtos estejam com vocês tornando seu dia melhor ou sua conversa entre amigos mais feliz ou sua festa de aniversário deliciosa ou, quem sabe até, seu casamento ainda mais especial.</p>
+                            <p>OBS: Clique em cada imagem para saber +</p>
+                        </section>
+                        <section data-anime="show-right">
+                            <h2>Inovação e Empreendedorismo</h2>
+                            <p>Pensando em inovar no ramo da confeitaria, além de abrir um novo espaço totalmente amplo e decorado para recebê-los, também tivemos a iniciativa de criar este site todinho para vocês.</p>
+                            <p>O que antes já era fácil, agora ficará melhor ainda! Aqui você pode aproveitar promoções incíveis, com produtos selecionados. Escolher seu produto, pagar e receber no conforto de sua casa com apenas alguns cliques. Parece incrível, não?</p>
+                            <p>Que tal aproveitar essa oportunidade? Faça seu pedido agora!</p>
+                            <button class="button">FAZER PEDIDO</button>
+                        </section>
+                    </div>
+                </section>
+
+                <!--<div>
                     <img id="cup" src="img/doces.jpg" alt="foto de um cupcake">
                 </div>
                 <div>
                     <h1>
-                        Historia sobre a loja
+                        História sobre a loja
                     </h1>
                     <p>
-                        Montar uma loja requer capacitação,  muita paciência e jogo de cintura para lidar com o
-                        mercado altamente competitivo.  mu
+                        Montar uma loja requer capacitação, muita paciência e jogo de cintura para lidar com o
+                        mercado altamente competitivo. mu
                         A loja Doces Sabores é um negócio único, <br> mupor remeter aos desejos dos clientes, à família
                         com crianças e aos clientes almejam consumir
-                        um doce e se sentir feliz. <br> 
+                        um doce e se sentir feliz. <br>
                         <strong>Trabalhamos pensando sempe em agadar nossa clientela! </strong>
 
 
-                        <ul class="sobreMissao">
-                            <li>
-                                <h2>Missao</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati quas blanditiis!</p>
-                            </li>
-                            <li>
-                                <h2>Visão</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati quas blanditiis!</p>
-                            </li>
-                            <li>
-                                <h2>Valores</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati quas blanditiis!</p>
-                            </li>
-                        </ul>
+                    <ul class="sobreMissao">
+                        <li>
+                            <h2>Missao</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati quas blanditiis!</p>
+                        </li>
+                        <li>
+                            <h2>Visão</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati quas blanditiis!</p>
+                        </li>
+                        <li>
+                            <h2>Valores</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati quas blanditiis!</p>
+                        </li>
+                    </ul>
                 </div>
                 </p>
             </nav>
@@ -97,8 +164,8 @@
     A loja Doces Sabores é um negócio único, por remeter aos desejos dos clientes, à família com crianças e aos clientes almejam consumir
     um doce e se sentir feliz.
     Trabalhamos pensando sempe em agadar nossa clientela!
+        -->
 
--->
 
     </section>
 
@@ -110,6 +177,7 @@
 
     </footer>
     <!--fim do rodapé-->
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

@@ -9,15 +9,21 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" origem cruzada>
-    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap"
-        rel=" stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap" rel=" stylesheet ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/menuMobile.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
-
+    <script>
+        document.documentElement.className += ' js'
+    </script>
 </head>
 
 
@@ -25,6 +31,7 @@
     <!--Topo do menu do site-->
     <div class="um"> </div>
     <header class="cabecalhoPrincipal">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
         <div class="container">
 
             <hgroup class="titulo">
@@ -34,42 +41,44 @@
                     Doces Sabores</h1>
                 <h2>Confeitaria feita com amor!</h2>
             </hgroup>
-            <nav class="cabecalhoPrincipal-nav">
-                
-                    <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
-                
+            <nav class="cabecalhoPrincipal-nav" data-menu="list">
+
+                <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
+                <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
+                <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
+                <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
+                <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
+                <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
+
+
+
             </nav>
         </div>
     </header>
     <!--Final do menu do site-->
-
+    <!-- Retirada essa parte para identificar a alteração de telas
     <section class="principal">
         <div class="container">
             <h1>Escolha um doce e adoce seu dia!</h1>
             <a href="#" target="_blank">Faça seu pedido agora mesmo</a>
         </div>
-    </section>
+    </section>-->
     <!--Fim da parte principal do site-->
 
     <!--Início da parte dos Bolos-->
     <section class="doces">
-        <div class="container" >
+        <div class="container">
             <h2>Bolos feitos à mão e com muito amor.</h2>
             <p>Ingredientes originais e selecionados</p>
 
             <ul class="menuDoces">
-                <li class="blocoDoce" >
+                <li class="blocoDoce">
                     <h3>Bolo de brigadeiro</h3>
                     <img src="img/bolo_home.jpeg" alt="Bolo brigadeiro">
                     <p>Bolo com massa de chocolate,<br> coberto e recheado com brigadeiro <br>ao leite. <br> &nbsp;Vendido inteiro ou
                         fatia.</p>
                     <h4><a href="#">R$56,00&nbsp;ou R$8,00 fatia </a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">Fazer o Pedido</a></h4>
                 </li>
                 <li class="blocoDoce">
                     <h3>Bolo de nozes</h3>
@@ -77,21 +86,28 @@
                     <p>Bolo com massa de baunilha,<br> coberto com brigadeiro<br> ao leite e nozes.&nbsp;Recheio de
                         nozes. <br> Vendido inteiro ou fatia.</p>
                     <h4><a href="#">R$63,00&nbsp;ou R$9,00 fatia </a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">Fazer o Pedido</a></h4>
                 </li>
                 <li class="blocoDoce"">
                     <h3>Bolo de nutella</h3>
-                    <img src="img/bolo_festa_chocolate.jpg" alt="Bolo de nutella">
+                    <img src=" img/bolo_festa_chocolate.jpg" alt="Bolo de nutella">
                     <p>Bolo com massa de baunilha, <br> coberto e recheado com <br> brigadeiro de nutella.</p>
                     <h4><a href="#">R$80,00&nbsp;ou R$10,00 fatia</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">Fazer o Pedido</a></h4>
+                </li>
+                <li class="blocoDoce"">
+                    <h3>Bolo de Churros</h3>
+                    <img src=" img/bolo_churros.jpg" alt="Bolo de churros">
+                    <p>Bolo com massa de chocolate, <br> coberto e recheado com <br> doce de leite.</p>
+                    <h4><a href="#">R$75,00&nbsp;ou R$10,00 fatia</a></h4>
+                    <h4><a data-modal="abrir" href="#">Fazer o Pedido</a></h4>
                 </li>
             </ul>
         </div>
     </section>
 
     <section class="doces">
-        <div class="container" >
+        <div class="container">
 
 
             <ul class="menuDoces">
@@ -100,22 +116,29 @@
                     <img src="img/bolo_morango.jpeg" alt="Bolo de cenoura">
                     <p>Bolo com massa de baunilha,<br> coberto chantili e morangos. <br> &nbsp;Recheado com brigadeiro de ninho <br> e
                         morangos.</p>
-                    <h4><a href="#">R$59,50,00&nbsp;ou R$8,50 fatia</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <h4><a href="#">R$59,50&nbsp;ou R$8,50 fatia</a></h4>
+                    <h4><a data-modal="abrir" href="#">Fazer o Pedido</a></h4>
                 </li>
                 <li class="blocoDoce">
                     <h3>Bolo tropical</h3>
                     <img src="img/box3.jpg" alt="Bolo tropical">
                     <p>Bolo com massa de baunilha,<br> coberto e recheado frutas<br> e creme de baunhilha.</p>
                     <h4><a href="#">R$60,00&nbsp;ou R$8,90 fatia</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">Fazer o Pedido</a></h4>
                 </li>
-                <li class="blocoDoce">
-                    <h3>Naked cake</h3>
+                <li class="grid-1-3">
+                    <h3>Naked Cake</h3>
                     <img src="img/bolo_frutas.jpg" alt="Bolo naked cake">
-                    <p>Naked cake com massa de chocolate.<br> &nbsp; Cobertura e recheio de <br>frutas e chantili.</p>
-                    <h4><a href="#">R$75,00&nbsp;ou R$10,90 fatia</a></h4>
-                    <h4><a href="#">Fazer o Pedido</a></h4>
+                    <p>Naked cake <br>com massa de chocolate.<br> Cobertura e recheio de <br>frutas e chantili.</p>
+                    <h4><a href="">R$75,00&nbsp;ou R$10,00 fatia</a></h4>
+                    <h4><a data-modal="abrir" href=#>Fazer o Pedido</a></h4>
+                </li>
+                <li class="grid-1-3">
+                    <h3>Bolo de fubá</h3>
+                    <img src="img/bolo_fuba.jpg" alt="Bolo de fubá">
+                    <p>Bolo caseiro de fubá</p>
+                    <h4><a href="">R$45,00&nbsp;ou R$5,00 fatia</a></h4>
+                    <h4><a data-modal="abrir" href=#>Fazer o Pedido</a></h4>
                 </li>
             </ul>
         </div>
@@ -123,30 +146,30 @@
 
 
     <section class="doces">
-        <div class="container" >
+        <div class="container">
 
 
             <ul class="menuDoces">
-                <li class="grid-1-3">
-                    <h3>Bolo de fubá</h3>
-                    <img src="img/bolo_fuba.jpg" alt="Bolo de fubá">
-                    <p>Bolo caseiro de fubá</p>
-                    <h4><a href="">R$45,00&nbsp;ou R$5,00 fatia</a></h4>
-                    <h4><a href=#>Fazer o Pedido</a></h4>
-                </li>
                 <li class="grid-1-3">
                     <h3>Bolo de milho</h3>
                     <img src="img/Bolo_milho.jpg" alt="Bolo de milho">
                     <p>Bolo de milho</p>
                     <h4><a href="#">R$45,00&nbsp;ou R$5,00 fatia</a></h4>
-                    <h4><a href=#>Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href=#>Fazer o Pedido</a></h4>
                 </li>
                 <li class="grid-1-3">
                     <h3>Bolo de chocolate simples</h3>
                     <img src="img/bolo_de-chocolate_simples.jpg" alt="Bolo de chocolate simples">
                     <p>Bolo de chocolate simples</p>
                     <h4><a href="#">R$45,00&nbsp;ou R$5,00 fatia</a></h4>
-                    <h4><a href=#>Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href=#>Fazer o Pedido</a></h4>
+                </li>
+                <li class="grid-1-3">
+                    <h3>Bolo de Laranja</h3>
+                    <img src="img/bolo-de-laranja.jpg" alt="Bolo de laranja">
+                    <p>Bolo de laranja com calda</p>
+                    <h4><a href="#">R$37,50&nbsp;ou R$5,00 fatia</a></h4>
+                    <h4><a data-modal="abrir" href=#>Fazer o Pedido</a></h4>
                 </li>
             </ul>
         </div>
@@ -184,8 +207,7 @@
             <h2>Peça online</h2>
             <p>Acesse nossas redes sociais</p>
             <!-- target serve para abrir uma aba nova ao clicar no link-->
-            <a href="#" target="_blank"><img class="pedido" src="img/icon_whatsapp.png"
-                    alt="Ícone para fazer pedido"></a>
+            <a href="#" target="_blank"><img class="pedido" src="img/icon_whatsapp.png" alt="Ícone para fazer pedido"></a>
             <a href="#" target="blank"><img class="pedido" src="img/icon_facebook.png" alt="ícone facebook"></a>|
             <a href="#" target="blank"><img class="pedido" src="img/icon_instragram.png" alt="Ícone instagram"></a>
 
@@ -200,6 +222,17 @@
             Móveis e Baseados na Web</p>
     </footer>
     <!--fim do rodapé-->
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <h3>Produto Adicionado ao carrinho com sucesso!</h3>
+                <button data-modal="fechar" class="continuarComprando">CONTINUAR COMPRANDO</button>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

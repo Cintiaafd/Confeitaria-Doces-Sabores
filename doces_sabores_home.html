@@ -9,13 +9,21 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" origem cruzada>
-    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap"
-        rel=" stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap" rel=" stylesheet ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/menuMobile.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+
+    <script>
+        document.documentElement.className += ' js'
+    </script>
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
 
 </head>
@@ -27,18 +35,16 @@
     <!-- classe pai -->
     <header class="cabecalhoPrincipal">
 
-
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
         <div class="container">
 
             <hgroup class="titulo">
                 <img src="./img/logo.png" id="logo" />
-                <h1>
-
-                    Doces Sabores</h1>
+                <h1>Doces Sabores</h1>
                 <h2>Confeitaria feita com amor!</h2>
             </hgroup>
 
-            <nav class="cabecalhoPrincipal-nav">
+            <nav class="cabecalhoPrincipal-nav" data-menu="list">
 
                 <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
                 <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
@@ -46,6 +52,7 @@
                 <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
                 <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
                 <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
+
 
             </nav>
         </div>
@@ -73,17 +80,17 @@
                     <h3>Promo 1</h3>
                     <img src="img/bolo_cenoura.jpg" alt="Bolo de cenoura">
                     <p>Já sabe que hoje é dia, né!?</p>
-                    <p>Tem promo rolando dessas coisas lindas e <br>deliciosas!
+                    <p>Tem promo rolando<br> dessas coisas lindas e <br>deliciosas!
                     </p>
-                    <h4><a href="#">R$30,00 | Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">R$30,00 | Fazer o Pedido</a></h4>
 
                 </li>
                 <li class="blocoDoce">
                     <h3>Promo 2</h3>
                     <img src="img/bolo_de-chocolate_recheado.jpg" alt="Bolo de chololate recheado">
                     <p>Já viu a promo que está rolando?</p>
-                    <p>Compre um bolo fofinho e delicioso.&nbsp; <br>Seu café da tarde ficará mais gostoso.</p>
-                    <h4><a href="#">R$38,00 | Fazer o Pedido </a></h4>
+                    <p>Compre um bolo fofinho<br> e delicioso. <br>Seu café da tarde <br>ficará mais gostoso.</p>
+                    <h4><a data-modal="abrir" href="#">R$38,00 | Fazer o Pedido </a></h4>
 
                 </li>
                 <li class="blocoDoce">
@@ -91,8 +98,14 @@
                     <img src="img/bolo_ninho.jpeg" alt="Bolo de leite ninho">
                     <p>E como resistir, né!?</p>
                     <p>Hoje pode! <b>Ontem, hoje e sempre!</b></p>
-                    <h4><a href="#">R$45,00 | Fazer o Pedido</a></h4>
-
+                    <h4><a data-modal="abrir" href="#">R$45,00 | Fazer o Pedido</a></h4>
+                </li>
+                <li class="blocoDoce"">
+                    <h3>Promo 4</h3>
+                    <img src=" img/bolo-de-abacaxi.jpg" alt="Bolo de abacaxi">
+                    <p>Aproveite!! Bolo de abacaxi com<br> calda caramelada!</p>
+                    <h4><a data-modal="abrir" href="#">R$55,00 | Fazer o Pedido</a></h4>
+                </li>
 
 
             </ul>
@@ -106,15 +119,15 @@
     <section class="doces">
         <div class="container" id="back">
             <h2>Alerta de promoção de tortas! Aproveite!</h2>
-            <p>Aquele zoomm nestas maravilhosas tortas</p>
+            <p>Aquele zoom nestas maravilhosas tortas</p>
 
             <ul class="menuDoces">
                 <li class="blocoDoce">
                     <h3>Promo 1</h3>
                     <img src="img/torta_abacaxi.jpeg" alt="Torta de abacaxi">
                     <p>Torta de abacaxi de milhões!</p>
-                    <p>Já deu para ver que é uma delícia, né!?</p>
-                    <h4><a href="#">R$33,00 | Fazer o Pedido </a></h4>
+                    <p>Já deu para ver <br>que é uma delícia, né!?</p>
+                    <h4><a data-modal="abrir" href="#">R$33,00 | Fazer o Pedido </a></h4>
 
                 </li>
                 <li class="blocoDoce">
@@ -122,7 +135,7 @@
                     <img src="img/torta_brigadeiro.jpg" alt="Torta de brigadeiro">
                     <p>Já conhece nossos doces?</p>
                     <p>Esta é nossa maravilhosa torta de <br>brigadeiro.</p>
-                    <h4><a href="#">R$33,00 | Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">R$33,00 | Fazer o Pedido</a></h4>
 
                 </li>
                 <li class="blocoDoce">
@@ -130,7 +143,7 @@
                     <img src="img/torta_cheesecake.jpeg" alt="Torta cheesecake">
                     <p>Ahhhhhh, cheesecake!</p>
                     <p>Porque hoje pede um docinho, né?!</p>
-                    <h4><a href="#">R$28,00 | Fazer o Pedido</a></h4>
+                    <h4><a data-modal="abrir" href="#">R$28,00 | Fazer o Pedido</a></h4>
 
                 </li>
 
@@ -148,27 +161,19 @@
             <ul class="menuDoces">
                 <li class="blocoDoce">
                     <h3>Promo 1</h3>
-                    <img src="img/c10.png" alt="Cupcake sabor baunhilha">
-                    <p>Imposssível pedir um só!</p>
-                    <p>Fofinho e bem recheado!</p>
-                    <h4><a href="#">R$14,00 | Fazer o Pedido </a></h4>
+                    <img src="img/cupcake_chocolate.jpg" alt="Cupcake sabor chocolate">
+                    <p>Zero condições, porque aqui tem <br>recheio de verdade!</p>
+                    <p>Este é nosso incrível cupcake de <br> chocolate!</p>
+                    <h4><a data-modal="abrir" href="#">R$15,00 | Fazer o Pedido </a></h4>
 
                 </li>
                 <li class="blocoDoce">
                     <h3>Promo 2</h3>
-                    <img src="img/cupcake_chocolate.jpg" alt="Cupcake sabor chocolate">
-                    <p>Zero condições, porque aqui tem <br>recheio de verdade!</p>
-                    <p>Este é nosso incrível cupcake de <br> chocolate!</p>
-                    <h4><a href="#">R$15,00 | Fazer o Pedido </a></h4>
-
-                </li>
-                <li class="blocoDoce">
-                    <h3>Promo 3</h3>
                     <img src="img/o1.png" alt="donut cobertura sabor chocolate">
                     <p>Ouvi falar donut?!</p>
                     <p>Aqui está nosso incrível donut.&nbsp;<br>
                         Saboroso e fofinho!</p>
-                    <h4><a href="#">R$10,00 | Fazer o Pedido </a></h4>
+                    <h4><a data-modal="abrir" href="#">R$10,00 | Fazer o Pedido </a></h4>
 
                 </li>
 
@@ -183,19 +188,19 @@
             <h3>Acompanhamentos</h3>
             <p>Que tal uma bebida para acompanhar?</p>
             <div class="itens" id="test">
-                <img src="img/agua.png" alt="água garrafa 500 ml">
-                <img src="img/coca.png" alt="coca-cola lata">
-                <img src="img/coca_zero.jpg" alt="coca-cola zero lata">
-                <img src="img/guaraná.png" alt="guaraná antártica lata">
-                <img src="img/fanta_guarana.png" alt="fanta guaraná lata">
-                <img src="img/fanta_laranja.png" alt="fanta laranja lata">
-                <img src="img/fanta_uva.png" alt="fanta uva lata">
-                <img src="img/sprite.jpg" alt="sprite lata">
-                <img src="img/suco_goiaba.jpeg" alt="suco del vala sabor goiaba">
-                <img src="img/suco_manga.png" alt="suco del vala sabor manga">
-                <img src="img/suco_pessego.png" alt="suco del vala sabor pessêgo">
-                <img src="img/suco_uva.png" alt="suco del vala sabor uva">
-                <img src="img/citrico.png" alt="schweppes lata">
+                <img data-modal="abrir" src="img/agua.png" alt="água garrafa 500 ml">
+                <img data-modal="abrir" src="img/coca.png" alt="coca-cola lata">
+                <img data-modal="abrir" src="img/coca_zero.jpg" alt="coca-cola zero lata">
+                <img data-modal="abrir" src="img/guaraná.png" alt="guaraná antártica lata">
+                <img data-modal="abrir" src="img/fanta_guarana.png" alt="fanta guaraná lata">
+                <img data-modal="abrir" src="img/fanta_laranja.png" alt="fanta laranja lata">
+                <img data-modal="abrir" src="img/fanta_uva.png" alt="fanta uva lata">
+                <img data-modal="abrir" src="img/sprite.jpg" alt="sprite lata">
+                <img data-modal="abrir" src="img/suco_goiaba.jpeg" alt="suco del vala sabor goiaba">
+                <img data-modal="abrir" src="img/suco_manga.png" alt="suco del vala sabor manga">
+                <img data-modal="abrir" src="img/suco_pessego.png" alt="suco del vala sabor pessêgo">
+                <img data-modal="abrir" src="img/suco_uva.png" alt="suco del vala sabor uva">
+                <img data-modal="abrir" src="img/citrico.png" alt="schweppes lata">
             </div>
         </div>
     </section>
@@ -210,9 +215,7 @@
                 <p>Venha nos visitar</p>
                 <iframe class="localizacao2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6691840381127!2d-47.83489957560364!3d-21.165559640903425!
             2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be6f086c65a7%3A0x856c948d24efc7bd!2sR.%20Monte%20Alegre%2C%20180%20-%20Sumarezinho
-            %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
         </section>
@@ -225,12 +228,9 @@
                 <h2>Peça online</h2>
                 <p>Acesse nossas redes sociais</p>
                 <!-- target serve para abrir uma aba nova ao clicar no link-->
-                <a href="https://web.whatsapp.com" target="_blank"><img class="pedido" src="img/icon_whatsapp.png"
-                        alt="Ícone para fazer pedido"></a>
-                <a href="https://www.facebook.com" target="blank"><img class="pedido" src="img/icon_facebook.png"
-                        alt="ícone facebook"></a>|
-                <a href="https://www.instagram.com" target="blank"><img class="pedido" src="img/icon_instragram.png"
-                        alt="Ícone instagram"></a>
+                <a href="https://web.whatsapp.com" target="_blank"><img class="pedido" src="img/icon_whatsapp.png" alt="Ícone para fazer pedido"></a>
+                <a href="https://www.facebook.com" target="blank"><img class="pedido" src="img/icon_facebook.png" alt="ícone facebook"></a>|
+                <a href="https://www.instagram.com" target="blank"><img class="pedido" src="img/icon_instragram.png" alt="Ícone instagram"></a>
 
             </div>
         </section>
@@ -244,6 +244,18 @@
 
         </footer>
         <!--fim do rodapé-->
+
+
+        <section class="modal-container" data-modal="container">
+            <div class="modal">
+                <button data-modal="fechar" class="fechar">X</button>
+                <form action="">
+                    <h3>Produto Adicionado ao carrinho com sucesso!</h3>
+                    <button data-modal="fechar" class="continuarComprando">CONTINUAR COMPRANDO</button>
+                </form>
+            </div>
+        </section>
+        <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

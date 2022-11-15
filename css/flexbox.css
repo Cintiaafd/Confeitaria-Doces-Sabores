@@ -1,116 +1,115 @@
 .cabecalhoPrincipal .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.cabecalhoPrincipal-nav{
-    display: flex;
-    
+.cabecalhoPrincipal-nav {
+  display: flex;
+  flex-direction: row;
 }
-.principal{
-    display: flex;
-    align-items: center;
-    margin-top: 100px;
+
+.principal {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
 }
-.menuDoces{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
+.menuDoces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /*.blocoDoce{
     width: 23%;
     margin: 1%;
 }  
-   */ 
-.sobre .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.sobreNav{
-    display: flex;
-    flex-direction: row;
-}
-.dir{
-    flex-direction: row;
-}
-.contatosNav{
-    display: flex;
-    flex-direction: row;
+   */
+
+.sobre-conf {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
+/*.sobre .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sobreNav {
+  display: flex;
+  flex-direction: row;
+}*/
 
-   
+.dir {
+  flex-direction: row;
+}
+.contatosNav {
+  display: flex;
+  flex-direction: row;
+}
+
 /* parte mobile do site */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  /*.cabecalhoPrincipal-nav {
+    flex-direction: column;
+  }
+  .cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }*/
+  .principal {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .principal a {
+    padding: 12px 12px;
+  }
+  .doces {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
 
-    .cabecalhoPrincipal-nav{
-        flex-direction: column;
-    }
-    .cabecalhoPrincipal .container{
-            flex-direction: column;
-            align-items: initial;
-            text-align: center;
-    }
-    .principal{
-        flex-direction:  column;
-        width: 100%;
-        height: auto;
-    }
-    .principal a{
-        padding: 12px 12px;
-    }
-    .doces{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex-wrap: wrap;
-        height: auto;
-        width: auto;
-    }
-    .menuDoces{
-        height: auto;
-    }
+  .menuDoces p {
+    font-size: 13px;
+  }
+  .menuDoces {
+    height: auto;
+  }
+  .menuDoces h4 a {
+    font-size: 15px;
+  }
 
-    #rodape {
-        height: auto;
-    }
- 
-    .sobre{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex-wrap: wrap;
-        height: auto;
-        width: auto;
-    }
-    .contatosNav{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex-wrap: wrap;
-        height: auto;
-        width: auto;
-    }
-    }
+  #rodape {
+    height: auto;
+  }
 
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
+  .contatosNav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .sobre-conf {
+    display: flex;
+    flex-direction: column;
+  }
+}

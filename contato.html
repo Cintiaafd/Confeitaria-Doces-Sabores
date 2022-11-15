@@ -9,79 +9,90 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" origem cruzada>
-    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap"
-        rel=" stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?família =Dose: wght @ 300&família =Playfair + Exibição&display = swap" rel=" stylesheet ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/menuMobile.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
-
+    <script>
+        document.documentElement.className += ' js'
+    </script>
 </head>
 
 
 <body>
-<!-- classe pai -->
-<header class="cabecalhoPrincipal">
+    <!-- classe pai -->
+    <header class="cabecalhoPrincipal">
+
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <div class="container">
+
+            <hgroup class="titulo">
+                <img src="./img/logo.png" id="logo" />
+                <h1>
+
+                    Doces Sabores</h1>
+                <h2>Confeitaria feita com amor!</h2>
+            </hgroup>
+
+            <nav class="cabecalhoPrincipal-nav" data-menu="list">
+
+                <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
+                <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
+                <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
+                <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
+                <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
+                <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
 
 
-    <div class="container">
-
-        <hgroup class="titulo">
-            <img src="./img/logo.png" id="logo" />
-            <h1>
-
-                Doces Sabores</h1>
-            <h2>Confeitaria feita com amor!</h2>
-        </hgroup>
-
-        <nav class="cabecalhoPrincipal-nav">
-
-            <a class="cabecalhoPrincipal-nav-link" href="doces_sabores_home.html">Home</a>
-            <a class="cabecalhoPrincipal-nav-link" href="bolos.html">Bolos</a>
-            <a class="cabecalhoPrincipal-nav-link" href="tortas.html">Tortas</a>
-            <a class="cabecalhoPrincipal-nav-link" href="doces.html">Doces</a>
-            <a class="cabecalhoPrincipal-nav-link" href="sobre.html">Sobre Nós</a>
-            <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
-
-        </nav>
-    </div>
-</header>
-<!--Final do menu do site-->
+            </nav>
+        </div>
+    </header>
+    <!--Final do menu do site-->
 
 
 
     <!-- Inicio da parte de contatos da loja-->
     <section class="sobre">
         <div class="container">
-            <nav class="contatosNav"> 
-        <div class="formulario">
-            <h1>Entre em contato conosco: </h1>
-            <form class="formStyle">
-                <label for="fname">Nome completo</label><br>
-                <input type="text" class="Ibox"><br>
-                <label for="email">E-mail</label><br>
-                <input type="text" class="Ibox"><br>
-                <label for="contatoTipo">Assunto</label><br>
-                <input type="text" class="Ibox"><br>
-                <label for="mensagem" >Digite sua mensagem:</label><br>
-                <input type="text" class="ultimaBox"><br>
-                <input type="checkbox">
-                <label for="mensagemCorpo">Quero receber ofertas por e-mail</label><br>
-                <button class="button"><a>Enviar</a></button>
-              </form>
+            <nav class="contatosNav">
+
+                <div class="formulario">
+                    <h1>Entre em contato conosco: </h1>
+
+                    <form class="formStyle">
+                        <label for="fname">Nome completo:</label><br>
+                        <input type="text" class="Ibox"><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="text" class="Ibox"><br>
+                        <label for="contatoTipo">Assunto:</label><br>
+                        <input type="text" class="Ibox"><br>
+                        <label for="mensagem">Digite sua mensagem:</label><br>
+                        <input type="text" class="ultimaBox"><br>
+                        <input type="checkbox">
+                        <label for="mensagemCorpo">Quero receber ofertas por e-mail</label><br>
+                        <button class="button" data-modal="abrir"><a>Enviar</a></button>
+                    </form>
+                </div>
+                <div class="contatos">
+                    <p>+55 (16) 99856-5742</p>
+                    <p>+55 (16) 3895-5397</p>
+                    <p>docesSabores@gmail.com</p>
+                    <p>www.docessabores.com.br</p>
+                    <p>Seg a Sábado das 08h as 19h</p>
+                </div>
+
+
+
+            </nav>
         </div>
-
-        <div class="contatos">
-            <h1>Contatos: </h1>
-            <p>Whatsapp: 55 (00) 00000-0000</p>
-            <p>e-mail: email@email.com</p>
-
-
-        </div>
-    </nav>
-    </div>
     </section>
 
     <!--Fim do contatos da loja-->
@@ -93,9 +104,7 @@
             <p>Venha nos visitar</p>
             <iframe class="localizacao2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6691840381127!2d-47.83489957560364!3d-21.165559640903425!
         2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be6f086c65a7%3A0x856c948d24efc7bd!2sR.%20Monte%20Alegre%2C%20180%20-%20Sumarezinho
-        %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        %2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014051-260!5e0!3m2!1spt-BR!2sbr!4v1668089854683!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
     </section>
@@ -109,6 +118,16 @@
             Móveis e Baseados na Web</p>
     </footer>
     <!--fim do rodapé-->
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <h3>Mensagem enviada com sucesso!</h3>
+                <button data-modal="fechar" class="continuarComprando">Fechar</button>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
