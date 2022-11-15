@@ -22,13 +22,20 @@
     <link rel="stylesheet" type="text/css" href="css/menuMobile.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
+    <script src="./js/modules/endOfTheSite.js"></script>
+    <script src="./js/modules/menu-mobile.js"></script>
+    <script src="./js/modules/modal.js"></script>
+    <script src="./js/modules/tab-menu.js"></script>
+    <script src="./js/script.js"></script>
+
     <script>
         document.documentElement.className += ' js'
     </script>
+
 </head>
 
 
-<body>
+<body onload="onLoadJS();">
     <!--Topo do menu do site-->
     <div class="um"> </div>
     <!-- classe pai -->
@@ -218,7 +225,6 @@
             </form>
         </div>
     </section>
-    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

@@ -21,14 +21,21 @@
     <link rel="stylesheet" type="text/css" href="css/flexbox.css">
     <link rel="stylesheet" type="text/css" href="css/menuMobile.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
+    <script src="./js/modules/endOfTheSite.js"></script>
+    <script src="./js/modules/menu-mobile.js"></script>
+    <script src="./js/modules/modal.js"></script>
+    <script src="./js/modules/tab-menu.js"></script>
+    <script src="./js/script.js"></script>
+
     <script>
         document.documentElement.className += ' js'
     </script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css">   -->
+
 </head>
 
 
-<body>
+<body onload="onLoadJS();">
     <!-- classe pai -->
     <header class="cabecalhoPrincipal">
 
@@ -129,7 +136,6 @@
             </form>
         </div>
     </section>
-    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
