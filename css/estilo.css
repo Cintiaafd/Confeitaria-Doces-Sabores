@@ -577,3 +577,19 @@ body {
 .conf-descricao section {
   margin-bottom: 3rem;
 }
+
+.back-to-top.ativo {
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  background: rgb(141, 64, 56);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
