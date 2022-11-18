@@ -1,6 +1,6 @@
 <h1> Confeitaria-Doces-Sabores</h1>
-<h2>Aplicação Web desenvolvida pelo grupo 8.</h2>
-<h3>Curso: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web.</h3>
+<h2>Aplicação Web desenvolvida pelo grupo 8</h2>
+<h3>Curso: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web</h3>
 <h3 align="center"> 
 	Membros do grupo🚀
  </h3>
@@ -11,6 +11,8 @@
   <h5>📌GILVAN NASCIMENTO MARANHAO DE SA</h5>
   <h5>📌MIQUELANE PEREIRA MELO</h5>
   <h5>📌MARCELO WALLACE DA CONCEICAO</h5>
+  
+  <h4>Professor:Thomás da Costa</h4>
   
   <h1 align="center">Descrição sobre o projeto</h1>
 
