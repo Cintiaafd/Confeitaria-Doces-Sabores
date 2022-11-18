@@ -1,9 +1,15 @@
 <h1> Confeitaria-Doces-Sabores</h1>
+</br>
 <h2>Aplicação Web desenvolvida pelo grupo 8</h2>
+</br>
 <h3>Curso: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web</h3>
+</br>
+<h3>Professor:Thomás da Costa</h3>
+</br>
 <h3 align="center"> 
 	Membros do grupo🚀
- </h3>
+</h3>
+</br>
   <h5>📌CINTIA APARECIDA FEITOSA DIAS</h5>
   <h5>📌VANESSA CAROLINE ZANOTTI</h5>
   <h5>📌FLAVIO DE BORBA NOBILE</h5>
@@ -12,9 +18,8 @@
   <h5>📌MIQUELANE PEREIRA MELO</h5>
   <h5>📌MARCELO WALLACE DA CONCEICAO</h5>
   
-  <h4>Professor:Thomás da Costa</h4>
-  
-  <h1 align="center">Descrição sobre o projeto</h1>
+</br>
+<h1 align="center">Descrição sobre o projeto</h1>
 
 <p align="justify">
 &nbsp;&nbsp;Salienta-se que o presente projeto tem como foco apresentar uma aplicação web, por meio da qual o cliente poderá acessar a plataforma, fazer o pedido e confirmar o pagamento para receber a comida no conforto de sua casa ou trabalho.</br>
