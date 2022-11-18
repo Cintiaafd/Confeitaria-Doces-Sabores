@@ -4,7 +4,7 @@
 </br>
 <h3>Curso: Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web</h3>
 </br>
-<h3>Professor:Thomás da Costa</h3>
+<h3>Professor:&nbsp;Thomás da Costa</h3>
 </br>
 <h3 align="center"> 
 	Membros do grupo🚀
