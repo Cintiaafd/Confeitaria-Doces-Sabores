@@ -11,6 +11,8 @@
   <h5>📌GILVAN NASCIMENTO MARANHAO DE SA</h5>
   <h5>📌MIQUELANE PEREIRA MELO</h5>
   <h5>📌MARCELO WALLACE DA CONCEICAO</h5>
+  
+  <h1 align="center">Descrição sobre o projeto</h1>
 
 <p align="justify">
 Salienta-se que o presente projeto tem como foco apresentar uma aplicação web, por meio da qual o cliente poderá acessar a plataforma, fazer o pedido e confirmar o pagamento para receber a comida no conforto de sua casa ou trabalho.</br>
